@@ -1,0 +1,144 @@
+/**
+ * Created by daizq.
+ */
+
+body {
+    background-color: #f5f5f5;
+    font-family: '微软雅黑', arial, sans-serif;
+    font-size: 15px;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin: 0 auto;
+    border: 0;
+}
+.navbar-default {
+    background-color: #5cb85c;
+}
+.container-fluid {
+    margin: 0 auto;
+    width: 1200px;
+}
+.topScroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 10000;
+}
+.topScroll .navbar .container-fluid a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+}
+#sj-log {
+    cursor: default;
+    font-size: 30px;
+}
+.container-fluid .navbar-collapse {
+    margin-left: 100px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: #84C784;
+}
+.navbar-default .navbar-nav>li>a:focus {
+    background-color: #5E9A5E;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: #5E9A5E;
+}
+.container {
+    min-height: 600px;
+    margin: 50px auto 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.footer {
+   /*  position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10000; */
+    background: #f1efef;
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    font-size: 13px;
+    text-align: center;
+    color: #000000;
+    border-top: 1px solid #d2d6d2;
+}
+.footer p {
+    margin: 0 auto;
+}
+
+
+/*首页*/
+/*.post-list-panel {
+    margin: 0 20px;
+}
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+.nav > li {
+    position: relative;
+    display: block;
+}
+.nav-tabs > li > a {
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+a, a:hover, a:active {
+    text-decoration: none;
+    color: #555;
+}*/
+@media (max-width: 991px){
+    .container-fluid {
+        width: auto;
+        padding: 0px;
+    }
+    .container-fluid .navbar-collapse {
+        margin-left: 0px;
+    }
+    .container-fluid .navbar-header .navbar-brand {
+        margin-left: 12px;
+    }
+    .container-fluid .navbar-header .navbar-toggle {
+        margin-right: 20px;
+    }
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #5cb85c
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #ffffff;
+}
+.nav-tabs {
+    border-bottom: 1px solid #5cb85c;
+}
+
+
+/*更改tooltip颜色*/
+.tooltip-inner {
+    text-align: left;
+    background-color: #f2dede;
+    color: red;
+    min-width: 120px;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #f2dede;
+}
+/*更改tooltip颜色*/

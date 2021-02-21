@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="./theme/css/chartroom.css" />
+<div class="chartroomCtrl">
+    <div class="messages-box">
+        <div class="messages-wrap">
+            <div ng-repeat="item in messages">
+                <p class="user-info">
+                    <span ng-bind="item.time"></span>
+                    <span ng-bind="item.userName"></span>
+                </p>
+                <p>
+                    <span class="content" ng-bind="item.content"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chart-wrap">
+        <textarea type="text" id="input-box" class="input-box" 
+        ng-keydown = "inputBox.keydown($event)"
+        ng-keyup="inputBox.keyup($event)" 
+        ng-model="inputBox.value"
+        required autofocus></textarea>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+/**
+ * Created by daizq.
+ */
+
+.chartroomCtrl {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #5cb85c;
+}
+
+.messages-box {
+     height: 450px;
+     padding: 5px;
+     overflow: auto;
+}
+
+.messages-box .user-info {
+    background-color: #5cb85c;
+    color: #ffffff;
+}
+
+.chart-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.chart-wrap .input-box {
+    padding: 1em .5em;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}

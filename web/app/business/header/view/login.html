@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="./theme/css/login.css" />
+
+<div class="login-wrap loginCtrl">
+
+    <div class="login-content">
+        <ul id="loginTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#login" data-toggle="tab">登录</a>
+            </li>
+            <li>
+                <a href="#register" data-toggle="tab">注册</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="login">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input ng-model="loginInfo.userCode" class="form-control" id="userCode" type="text"
+                                placeholder="请输入手机号码">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input ng-model="loginInfo.password" class="form-control" id="password" type="password"
+                                placeholder="密码" ng-keyup="loginInfo.keyup($event)">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="img-verify-content">
+                            <div class="col-sm-9">
+                                <input ng-model="loginInfo.imgVerifyCode" class="form-control" id="imgVerifyCode" type="text"
+                                    placeholder="验证码">
+                            </div>
+
+                            <img class="img-verify" title="点击刷新" ng-src="{{imgVerify.path}}" ng-click="imgVerify.click()">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <div class="checkbox">
+                                <label><input id="autoLogin" type="checkbox">下次自动登录</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input ng-click="loginInfo.loginClick($event)" class="btn btn-default btn-block" id="loginBtn"
+                                type="button" value="登录">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="register">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input ng-model="registerInfo.userCode" class="form-control" id="registeruserCode" type="text"
+                                placeholder="请输入手机号码">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input ng-model="registerInfo.password" class="form-control" id="registerPassword" type="password"
+                                placeholder="密码" ng-keyup="registerInfo.keyup($event)">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="img-verify-content">
+                            <div class="col-sm-9">
+                                <input ng-model="registerInfo.imgVerifyCode" class="form-control col-sm-8" id="registerImgVerifyCode"
+                                    type="text" placeholder="验证码">
+                            </div>
+
+                            <img class="img-verify" title="点击刷新" ng-src="{{imgVerify.path}}" ng-click="imgVerify.click()">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input ng-click="registerInfo.registerClick($event)" class="btn btn-default btn-block" id="registerBtn"
+                                type="button" value="注册">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
